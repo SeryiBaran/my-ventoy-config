@@ -1,0 +1,22 @@
+{
+  "control": [
+    { "VTOY_DEFAULT_MENU_MODE": "1" },
+    { "VTOY_WIN11_BYPASS_CHECK": "1" },
+    { "VTOY_WIN11_BYPASS_NRO": "1" },
+    { "VTOY_DEFAULT_SEARCH_ROOT": "/ISO" },
+    { "VTOY_MENU_LANGUAGE": "ru_RU" },
+    { "VTOY_HELP_TXT_LANGUAGE": "ru_RU" }
+  ],
+  "theme": {
+    "file": "/ventoy/theme/theme.txt",
+    "fonts": [
+      "/ventoy/theme/fonts/fs-16.pf2",
+      "/ventoy/theme/fonts/fs-20.pf2",
+      "/ventoy/theme/fonts/fs-22.pf2",
+      "/ventoy/theme/fonts/fs-24.pf2",
+      "/ventoy/theme/fonts/fs-30.pf2",
+      "/ventoy/theme/fonts/fs-32.pf2",
+      "/ventoy/theme/fonts/fs-140.pf2"
+    ]
+  }
+}

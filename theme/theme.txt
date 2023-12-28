@@ -1,0 +1,135 @@
+# Global properties
+desktop-color: "#3b3b3b"
+title-text: " "
+title-color: "#ffffff"
+message-color: "#f2f2f2"
+
+terminal-font: "Fixedsys Excelsior Regular 16"
+terminal-box: "terminal_box_*.png"
+
++ label {
+  left = 0
+  top = 2%
+  width = 100%
+  align = "center"
+  text = "Ventoy"
+  color = "#ffffff"
+  font = "Fixedsys Excelsior Regular 140"
+}
+
++ label {
+  left = 0
+  top = 20%
+  width = 100%
+  align = "center"
+  text = "--- Том 2 ---"
+  color = "#ffffff"
+  font = "Fixedsys Excelsior Regular 32"
+}
+
++ boot_menu {
+  left = 10%
+  width = 80%
+  top = 25%
+  height = 50%
+
+  menu_pixmap_style = "menu_*.png"
+
+  item_color = "#ffffff"  
+  item_height = 26
+  
+  item_spacing = 1
+  item_padding = 1
+
+  selected_item_color= "#f2f2f2"
+  selected_item_pixmap_style = "select_*.png"
+
+  item_icon_space = 6
+
+  scrollbar = true
+  scrollbar_width = 10
+  scrollbar_thumb = "slider_*.png"
+
+  icon_width = 22
+  icon_height = 22
+
+  item_font = "Fixedsys Excelsior Regular 16"
+}
+
++ progress_bar {
+  id = "__timeout__"
+  text = "@TIMEOUT_NOTIFICATION_SHORT@"
+
+  left = 20%
+  width = 60%
+  top = 85%
+
+  text_color = "red"
+  bar_style = "*"
+  highlight_style = "*"
+
+  font = "Fixedsys Excelsior Regular 16"
+}
+
++ label {
+  left = 0
+  top = 90%
+  width = 100%
+  align = "center"
+  text = "F1 - Справка"
+  color = "#ffffff"
+  font = "Fixedsys Excelsior Regular 32"
+}
+
+# + hbox{ 
+#   left = 30%
+#   top = 95%
+#   width = 10%
+#   height = 25
+#   + label {text = "@VTOY_HOTKEY_TIP@" color = "white" align = "left"} 
+# 
+#   font = "Fixedsys Excelsior Regular 16"
+# }
+# 
+# 
+# + hbox{ 
+#   left = 30%
+#   top = 95%-25
+#   width = 10%
+#   height = 25
+#   + label {text = "@VTOY_MEM_DISK@" color = "red" align = "left"} 
+# 
+#   font = "Fixedsys Excelsior Regular 16"
+# }
+# 
+# 
+# + hbox{ 
+#   left = 30%
+#   top = 95%-50
+#   width = 10%
+#   height = 25
+#   + label {text = "@VTOY_ISO_RAW@" color = "red" align = "left"} 
+# 
+#   font = "Fixedsys Excelsior Regular 16"
+# }
+# 
+# 
+# + hbox{ 
+#   left = 30%+200
+#   top = 95%-50
+#   width = 10%
+#   height = 25
+#   + label {text = "@VTOY_GRUB2_MODE@" color = "red" align = "left"} 
+# 
+#   font = "Fixedsys Excelsior Regular 16"
+# }
+# 
+# + hbox{ 
+#   left = 90%
+#   top = 55 
+#   width = 10%
+#   height = 25
+#   + label {text = "@VTOY_ISO_UEFI_DRV@" color = "red" align = "left"} 
+# 
+#   font = "Fixedsys Excelsior Regular 16"
+# }
