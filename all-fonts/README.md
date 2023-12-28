@@ -20,7 +20,7 @@ sudo grub-mkfont -s 32 -o fs-32.pf2 fixedsys-ligatures.ttf
 
 ### JavaScript script what generates commands
 
-This script generates commands to create font files with sizes 2,4,6,8,10,...,146 and 148.
+This script generates commands to create font files with sizes 2...148.
 
 You can use it in Chrome DevTools, Node.JS or an online editor.
 
