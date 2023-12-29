@@ -10,11 +10,10 @@
   "theme": {
     "file": "/ventoy/theme/theme.txt",
     "fonts": [
+      "/ventoy/theme/fonts/TerminusTTF-16.pf2",
+      "/ventoy/theme/fonts/TerminusTTF-32.pf2",
+      "/ventoy/theme/fonts/TerminusTTF-140.pf2",
       "/ventoy/theme/fonts/fs-16.pf2",
-      "/ventoy/theme/fonts/fs-20.pf2",
-      "/ventoy/theme/fonts/fs-22.pf2",
-      "/ventoy/theme/fonts/fs-24.pf2",
-      "/ventoy/theme/fonts/fs-30.pf2",
       "/ventoy/theme/fonts/fs-32.pf2",
       "/ventoy/theme/fonts/fs-140.pf2"
     ]
