@@ -2,7 +2,7 @@
 
 ![Screenshot](./readme-assets/screenshot.png)
 
-My simple theme for Ventoy. Based on Ventoy Dark Theme.
+My simple theme for Ventoy. Based on the [Shodan](https://www.gnome-look.org/p/1251112) theme.
 
 ## Fonts
 
