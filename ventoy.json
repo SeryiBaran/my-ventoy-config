@@ -11,11 +11,7 @@
     "file": "/ventoy/theme/theme.txt",
     "fonts": [
       "/ventoy/theme/fonts/TerminusTTF-16.pf2",
-      "/ventoy/theme/fonts/TerminusTTF-32.pf2",
-      "/ventoy/theme/fonts/TerminusTTF-140.pf2",
-      "/ventoy/theme/fonts/fs-16.pf2",
-      "/ventoy/theme/fonts/fs-32.pf2",
-      "/ventoy/theme/fonts/fs-140.pf2"
+      "/ventoy/theme/fonts/TerminusTTF-32.pf2"
     ]
   }
 }

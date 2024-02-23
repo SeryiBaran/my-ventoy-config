@@ -1,135 +1,107 @@
-# Global properties
-desktop-color: "#5e5e5e"
+desktop-image: "background.png"
+#desktop-color: "#000000"
+#title-text: "--- Тест ---"
+#title-color: "#67AC68"
+#title-font: "Terminus (TTF) Regular 32"
 title-text: " "
-title-color: "#ffffff"
-message-color: "#f2f2f2"
-
+terminal-box: "terminal_*.png"
 terminal-font: "Terminus (TTF) Regular 16"
-terminal-box: "terminal_box_*.png"
-
+#message-font: "Terminus (TTF) Regular 16"
+#message-color: "#67AC68"
+#message-bg-color: "#000000"
 + label {
-  left = 0
-  top = 2%
-  width = 100%
-  align = "center"
-  text = "Ventoy"
-  color = "#ffffff"
-  font = "Fixedsys Excelsior Regular 140"
+    left = 2%
+    top = 2%
+    width = 68%
+    #height = 6%
+    text = "--- Тест ---"
+    align = "center"
+    font = "Terminus (TTF) Regular 32"
+    color = "#67AC68"
 }
-
-#+ label {
-#  left = 0
-#  top = 20%
-#  width = 100%
-#  align = "center"
-#  text = "--- Том 2 ---"
-#  color = "#ffffff"
-#  font = "Terminus (TTF) Regular 32"
-#}
-
 + boot_menu {
-  left = 15%
-  width = 70%
-  top = 25%
-  height = 50%
-
-  menu_pixmap_style = "menu_*.png"
-
-  item_color = "#ffffff"
-  item_height = 32
-
-  item_spacing = 1
-  item_padding = 1
-
-  selected_item_color= "#f2f2f2"
-  selected_item_pixmap_style = "select_*.png"
-
-  item_icon_space = 6
-
-  scrollbar = true
-  scrollbar_width = 10
-  scrollbar_thumb = "slider_*.png"
-
-  icon_width = 32
-  icon_height = 32
-
-  item_font = "Terminus (TTF) Regular 16"
+    visible = true
+    left = 2%
+    top = 10%
+    width = 68%
+    height = 78%
+    menu_pixmap_style = "menu_*.png"
+    scrollbar = true
+    scrollbar_width = 2
+    #scrollbar_frame = "scr_frame_*.png"
+    scrollbar_thumb = "slider_*.png"
+    item_font = "Terminus (TTF) Regular 16"
+    item_color = "#67AC68"
+    selected_item_font = "Terminus (TTF) Regular 16"
+    selected_item_color= "#FFFFFF"
+    selected_item_pixmap_style = "select_*.png"
+    item_height = 20
+    item_padding = 10
+    item_spacing = 0
+    item_icon_space = 0
+    icon_width = 0
+    icon_height = 0
 }
-
 + progress_bar {
-  id = "__timeout__"
-  text = "@TIMEOUT_NOTIFICATION_SHORT@"
-
-  left = 20%
-  width = 60%
-  top = 85%
-
-  text_color = "red"
-  bar_style = "*"
-  highlight_style = "*"
-
-  font = "Terminus (TTF) Regular 16"
+    visible = true
+    id = "__timeout__"
+    left = 5%
+    top = 80%
+    height = 30
+    width = 90%
+    font = "Terminus (TTF) Regular 16"
+    text_color = "#00FF00"
+    fg_color = "#000000"
+    bg_color = "#67AC68"
+    border_color = "#67AC68"
+    text = "Загрузка по умолчанию через @TIMEOUT_NOTIFICATION_SHORT@ секунд"
+    bar_style = "progress_border_*.png"
+    highlight_style = "progress_bar_*.png"
 }
-
 + label {
-  left = 0
-  top = 90%
-  width = 100%
-  align = "center"
-  text = "F1 - Справка"
-  color = "#ffffff"
-  font = "Terminus (TTF) Regular 32"
+    top = 75%
+    left = 50%
+    width = 100%
+    height = 25
+    text = ""
+    align = "center"
+    font = "Terminus (TTF) Regular 16"
+    color = "#000000"
 }
 
-# + hbox{ 
-#   left = 30%
-#   top = 95%
-#   width = 10%
-#   height = 25
-#   + label {text = "@VTOY_HOTKEY_TIP@" color = "white" align = "left"} 
-# 
-#   font = "Terminus (TTF) Regular 16"
-# }
-# 
-# 
-# + hbox{ 
-#   left = 30%
-#   top = 95%-25
-#   width = 10%
-#   height = 25
-#   + label {text = "@VTOY_MEM_DISK@" color = "red" align = "left"} 
-# 
-#   font = "Terminus (TTF) Regular 16"
-# }
-# 
-# 
-# + hbox{ 
-#   left = 30%
-#   top = 95%-50
-#   width = 10%
-#   height = 25
-#   + label {text = "@VTOY_ISO_RAW@" color = "red" align = "left"} 
-# 
-#   font = "Terminus (TTF) Regular 16"
-# }
-# 
-# 
-# + hbox{ 
-#   left = 30%+200
-#   top = 95%-50
-#   width = 10%
-#   height = 25
-#   + label {text = "@VTOY_GRUB2_MODE@" color = "red" align = "left"} 
-# 
-#   font = "Terminus (TTF) Regular 16"
-# }
-# 
-# + hbox{ 
-#   left = 90%
-#   top = 55 
-#   width = 10%
-#   height = 25
-#   + label {text = "@VTOY_ISO_UEFI_DRV@" color = "red" align = "left"} 
-# 
-#   font = "Terminus (TTF) Regular 16"
-# }
+# ADD THIS FOR VENTOY INFO ON THE BOTTOM
+
++ hbox{ 
+    left = 28%
+    top = 95%
+    width = 10%
+    height = 16
+    + label {text = "@VTOY_HOTKEY_TIP@" color = "#fac02e" align = "left"} 
+}
+
+
++ hbox{ 
+    left = 30%
+    top = 95%-25
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_MEM_DISK@" color = "#fac02e" align = "left"} 
+}
+
+
++ hbox{ 
+    left = 30%
+    top = 95%-50
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_ISO_RAW@" color = "#fac02e" align = "left"} 
+}
+
+
++ hbox{ 
+    left = 90%
+    top = 55 
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_ISO_UEFI_DRV@" color = "#fac02e" align = "left"} 
+}
