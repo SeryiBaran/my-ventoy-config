@@ -10,8 +10,8 @@ terminal-font: "Terminus (TTF) Regular 16"
 #message-color: "#67AC68"
 #message-bg-color: "#000000"
 + label {
-    left = 2%
-    top = 2%
+    left = 16
+    top = 16
     width = 68%
     text = "--- Тест ---"
     align = "center"
@@ -20,10 +20,11 @@ terminal-font: "Terminus (TTF) Regular 16"
 }
 + boot_menu {
     visible = true
-    left = 2%
-    top = 10%
+    left = 16
+    top = 64
     width = 68%
-    height = 76%
+    #height = 100%-64-48-4-30
+    height = 100%-64-48
     menu_pixmap_style = "menu_*.png"
     scrollbar = true
     scrollbar_width = 2
@@ -41,24 +42,19 @@ terminal-font: "Terminus (TTF) Regular 16"
     icon_width = 0
     icon_height = 0
 }
-+ progress_bar {
-    visible = true
-    id = "__timeout__"
-    left = 5%
-    top = 80%
-    height = 30
-    width = 90%
-    font = "Terminus (TTF) Regular 16"
-    text_color = "#00FF00"
-    fg_color = "#000000"
-    bg_color = "#67AC68"
-    border_color = "#67AC68"
-    text = "Загрузка по умолчанию через @TIMEOUT_NOTIFICATION_SHORT@ секунд"
-    bar_style = "progress_border_*.png"
-    highlight_style = "progress_bar_*.png"
-}
+# + progress_bar {
+#     visible = true
+#     id = "__timeout__"
+#     left = 16
+#     top = 100%-48-30
+#     width = 68%
+#     height = 30
+#     font = "Terminus (TTF) Regular 16"
+#     text_color = "#67AC68"
+#     text = "@TIMEOUT_NOTIFICATION_SHORT@"
+# }
 + label {
-    left = 2%
+    left = 16
     top = 100%-32
     width = 96%
     text = "F1 - Справка"
