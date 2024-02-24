@@ -12,6 +12,9 @@
     "fonts": [
       "/ventoy/theme/fonts/TerminusTTF-16.pf2",
       "/ventoy/theme/fonts/TerminusTTF-32.pf2"
-    ]
+    ],
+    "ventoy_left": "16",
+    "ventoy_top": "100%-32",
+    "ventoy_color": "#fac02e"
   }
 }
