@@ -16,5 +16,33 @@
     "ventoy_left": "16",
     "ventoy_top": "100%-32",
     "ventoy_color": "#fac02e"
-  }
+  },
+  "menu_class": [
+    {
+      "dir": "/ISO/windows",
+      "class": "windows"
+    },
+    {
+      "dir": "/ISO/linux",
+      "class": "linux"
+    },
+    {
+      "dir": "/ISO/utilities",
+      "class": "driver"
+    }
+  ],
+  "menu_alias": [
+    {
+      "dir": "/ISO/windows",
+      "alias": "Windows"
+    },
+    {
+      "dir": "/ISO/linux",
+      "alias": "Linux"
+    },
+    {
+      "dir": "/ISO/utilities",
+      "alias": "LiveCD utilities and rescue"
+    }
+  ]
 }
