@@ -15,7 +15,8 @@
     ],
     "ventoy_left": "16",
     "ventoy_top": "100%-32",
-    "ventoy_color": "#fac02e"
+    "ventoy_color": "#fac02e",
+	"gfxmode": "1920x1080"
   },
   "menu_class": [
     {
